@@ -16,7 +16,7 @@ public class Demo {
             System.out.println("Camion créé !");
 
             // Afficher tous les camions
-            List<com.mysqlconnection.CamionCRUD.Camion> camions = com.mysqlconnection.CamionCRUD.getAllCamions();
+            List<com.mysqlconnection.CamionCRUD.Camion> camions = CamionCRUD.getAllCamions();
             System.out.println("\nListe des camions :");
             camions.forEach(System.out::println);
 
@@ -46,4 +46,4 @@ public class Demo {
             System.err.println("Erreur : " + e.getMessage());
         }
     }
-}
+    }
